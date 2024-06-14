@@ -93,7 +93,8 @@ echo "Adding $SN Account to Active Directory"
 New-ADUser -SamAccountName $UserName -UserPrincipalName $UserplusDomain -GivenName $FirstName -Surname $LastName -Name "$FirstName $LastName" -DisplayName "$FirstName $LastName" -Enabled $true -AccountPassword (ConvertTo-SecureString -AsPlainText $Password -Force) -Path $OUPath
 Add-ADGroupMember -Identity $GroupName -Members $UserName 
 
-
+#Please note that this is just a playgroung script for practicing Powershell 
+#Happy coding 
 
 
 
